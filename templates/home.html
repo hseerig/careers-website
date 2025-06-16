@@ -14,12 +14,14 @@
     </style>
   </head>
   <body>
-    <div class="container">
-    <h1 class="text-center mt-2 mb-4">{{company_name}} careers</h1>
+    {% include 'nav.html' %}
     <img class="img-fluid" id="banner" src="https://d2b8553f-c252-4085-a666-46b6b54fafc9-00-2yjw1ww4a7gff.sisko.replit.dev/static/banner.jpg" height=320>
-    <h2 class="text-center mt-2 mb-4">about jovian</h2>
+    <div class="container">
+    <h1 class="text-center mt-2 mb-4"></h1>
+    
+    <h2 class="text-center mt-2 mb-4">ABOUT DEMO</h2>
     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <h2 class="text-center mt-2 mb-4">open positions</h2>
+    <h2 class="text-center mt-2 mb-4">JOB OPTIONS</h2>
     <div>
       {% for job in jobs %}
         {% include 'jobitem.html' %}
@@ -27,8 +29,9 @@
     </div>
     <div class="text-center">
       <button type="button" class="btn btn-primary btn-lg">contact us</button>
-      <p class="mt-4">copyright 2025,jovian</p>
+      
     </div>
       </div>
+      {% include 'footerr.html' %}
   </body>
 </html>
